@@ -1,0 +1,24 @@
+<package format="2">
+  <name>tensorvoting</name>
+  <version>1.0.0</version>
+  <description>
+
+     A library for tensor voting on 3D point-clouds using GPU (NVIDIA).
+
+  </description>
+  <maintainer email="liu.ming.prc@gmail.com">Ming Liu</maintainer>
+  <license>BSD</license>
+  <!-- <review status="unreviewed" notes=""/> -->
+  <url>http://ros.org/wiki/tensorvoting</url>
+  <buildtool_depend>catkin</buildtool_depend> 
+
+  <depend>roscpp</depend>
+  <depend>libpointmatcher_ros</depend>
+  <depend>libpointmatcher</depend>
+  <depend>sensor_msgs</depend>
+<!--	<rosdep name="stack-gpgpu"/> -->
+<!--  <depend package="cuda"/> -->
+
+</package>
+
+
