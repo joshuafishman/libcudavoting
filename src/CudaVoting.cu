@@ -554,10 +554,10 @@ namespace cudavoting{
     cudaEventSynchronize(stop_event0);
     cutilSafeCall( cudaEventElapsedTime(&elapsed_time0, start_event0, stop_event0) );
     printf("EVENT timed time everything in sparseballvoting:\t%.2f \n\n", elapsed_time0 );
-#ifdef check_memory_size
-        cuCtxDetach( cudaContext );
-#endif
-        cutilSafeCall( cudaDeviceReset() );
+    #ifdef check_memory_size
+            cuCtxDetach( cudaContext );
+    #endif
+//         cutilSafeCall( cudaDeviceReset() );
     }
 
 
@@ -1062,7 +1062,7 @@ namespace cudavoting{
 #ifdef check_memory_size
         cuCtxDetach( cudaContext );
 #endif
-        cutilSafeCall( cudaDeviceReset() );
+        // cutilSafeCall( cudaDeviceReset() );
 
 
     }
